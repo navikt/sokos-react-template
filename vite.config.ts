@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: resolve(__dirname, "src/App.tsx"),
       preserveEntrySignatures: "exports-only",
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         entryFileNames: "bundle.js",
         format: "esm",
