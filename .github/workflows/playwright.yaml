@@ -1,21 +1,5 @@
 name: Playwright Tests
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "**.md"
-      - "LICENCE"
-      - "CODEOWNERS"
-      - ".gitignore"
-      - ".github/workflows/build-pr.yaml"
-      - ".github/workflows/chainguard-digestabot.yaml"
-      - ".github/workflows/codeql-trivy-scan.yaml"
-      - ".github/workflows/dependabot-automerge.yaml"
-      - ".github/workflows/deploy.yaml"
-      - ".github/workflows/manual-deploy.yaml"
-      - ".github/dependabot.yaml"
-
   pull_request:
     branches:
       - main
