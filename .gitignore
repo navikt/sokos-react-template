@@ -93,6 +93,9 @@ build
 # vuepress build output
 .vuepress/dist
 
+# MSW generated files
+public/mockServiceWorker.js
+
 # Serverless directories
 .serverless/
 

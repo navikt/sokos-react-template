@@ -1,29 +1,29 @@
 {
-  "name": "sokos-react-template-server",
-  "version": "1.0.0",
-  "description": "Server for sokos-react-template",
-  "main": "src/server.ts",
-  "scripts": {
-    "dev": "nodemon src/server.ts",
-    "build": "tsc --build"
-  },
-  "author": "navikt",
-  "license": "MIT",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.2.1",
-    "express-static-gzip": "^3.0.0"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/node": "^24.10.1",
-    "nodemon": "^3.1.11",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  },
-  "engines": {
-    "pnpm": ">=10.16.0",
-    "node": ">=22.21.0"
-  }
+	"name": "sokos-react-template-server",
+	"version": "1.0.0",
+	"description": "Server for sokos-react-template",
+	"main": "src/server.ts",
+	"scripts": {
+		"dev": "nodemon src/server.ts",
+		"build": "tsc --build"
+	},
+	"author": "navikt",
+	"license": "MIT",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^5.2.1",
+		"express-static-gzip": "^3.0.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.6",
+		"@types/node": "^24.10.1",
+		"nodemon": "^3.1.11",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
+	},
+	"engines": {
+		"pnpm": ">=10.16.0",
+		"node": ">=22.21.0"
+	}
 }
