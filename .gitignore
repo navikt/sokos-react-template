@@ -50,9 +50,6 @@ typings/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
-.eslintcache
-
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -92,6 +89,9 @@ build
 
 # vuepress build output
 .vuepress/dist
+
+# MSW generated files
+public/mockServiceWorker.js
 
 # Serverless directories
 .serverless/
