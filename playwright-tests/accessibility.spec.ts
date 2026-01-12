@@ -7,7 +7,11 @@ test.describe("Axe a11y", () => {
 	}) => {
 		await page.goto("/mikrofrontend");
 
-		await page.waitForLoadState("networkidle");
+		await expect(
+			page.getByRole("heading", {
+				name: "React grensesnittmal for Utbetalingsportalen",
+			}),
+		).toBeVisible();
 
 		const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
 
