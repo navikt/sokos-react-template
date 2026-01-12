@@ -31,7 +31,7 @@
 		"@navikt/aksel-stylelint": "^7.36.0",
 		"@playwright/test": "^1.57.0",
 		"@rollup/plugin-terser": "^0.4.4",
-		"@types/node": "^24.10.1",
+		"@types/node": "^25.0.3",
 		"@types/react": "^19.2.7",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^5.1.2",
