@@ -11,7 +11,7 @@ jobs:
       contents: read
       pull-requests: write
     name: Dependabot Auto-merge
-    uses: navikt/mob-gha-workflows/.github/workflows/dependabot-automerge.yaml@digestabot
+    uses: navikt/mob-gha-workflows/.github/workflows/dependabot-automerge.yaml@main
     secrets:
       APP_ID: ${{ vars.APP_ID }}
       PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}

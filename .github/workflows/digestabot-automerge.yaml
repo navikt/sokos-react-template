@@ -1,0 +1,13 @@
+name: Digestabot Auto-merge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * MON-FRI"
+
+jobs:
+  digestabot-automerge:
+    uses: navikt/mob-gha-workflows/.github/workflows/digestabot-automerge.yaml@automerge-digestabot
+    secrets:
+      APP_ID: ${{ vars.APP_ID }}
+      PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
