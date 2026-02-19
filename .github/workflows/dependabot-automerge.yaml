@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 8 * * MON-FRI"
 
+env:
+  TZ: Europe/Oslo
+
 jobs:
   dependabot-automerge:
     permissions:
