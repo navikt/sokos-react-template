@@ -20,6 +20,10 @@ on:
 env:
   TZ: Europe/Oslo
 
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false    
+
 jobs:
   build-push-image:
     permissions:
