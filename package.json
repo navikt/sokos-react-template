@@ -77,5 +77,11 @@
 	"engines": {
 		"pnpm": ">=10.16.0",
 		"node": ">=24.13.0"
+	},
+	"pnpm": {
+		"overrides": {
+			"rollup": ">=4.59.0",
+			"serialize-javascript": ">=7.0.3"
+		}
 	}
 }
