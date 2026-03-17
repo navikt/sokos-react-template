@@ -30,7 +30,7 @@
 		"@biomejs/biome": "^2.4.6",
 		"@navikt/aksel-stylelint": "^7.39.0",
 		"@playwright/test": "^1.58.2",
-		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-terser": "^1.0.0",
 		"@types/node": "^25.3.5",
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
