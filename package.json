@@ -27,7 +27,7 @@
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.7",
+		"@biomejs/biome": "^2.4.8",
 		"@navikt/aksel-stylelint": "^7.39.0",
 		"@playwright/test": "^1.58.2",
 		"@rollup/plugin-terser": "^1.0.0",
@@ -38,7 +38,7 @@
 		"autoprefixer": "^10.4.27",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0",
-		"msw": "^2.12.11",
+		"msw": "^2.12.13",
 		"postcss": "^8.5.8",
 		"stylelint": "^16.26.1",
 		"stylelint-config-standard": "^39.0.1",
