@@ -27,7 +27,7 @@
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.8",
+		"@biomejs/biome": "^2.4.9",
 		"@navikt/aksel-stylelint": "^7.39.0",
 		"@playwright/test": "^1.58.2",
 		"@rollup/plugin-terser": "^1.0.0",
