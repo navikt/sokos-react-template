@@ -20,14 +20,14 @@
 		"@navikt/aksel-icons": "7.39.0",
 		"@navikt/ds-css": "7.39.0",
 		"@navikt/ds-react": "7.39.0",
-		"axios": "1.13.6",
+		"axios": "1.14.0",
 		"react": "19.2.4",
 		"react-dom": "19.2.4",
 		"swr": "2.4.1",
 		"zod": "4.3.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.8",
+		"@biomejs/biome": "2.4.9",
 		"@navikt/aksel-stylelint": "7.39.0",
 		"@playwright/test": "1.58.2",
 		"@rollup/plugin-terser": "1.0.0",
