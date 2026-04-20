@@ -27,9 +27,6 @@
 		"node": ">=24.13.0"
 	},
 	"pnpm": {
-		"overrides": {
-			"picomatch": ">=4.0.4",
-			"path-to-regexp": ">=8.4.0"
-		}
+		"overrides": {}
 	}
 }
