@@ -17,9 +17,9 @@
 	"dependencies": {
 		"@axe-core/playwright": "4.11.1",
 		"@grafana/faro-web-sdk": "2.3.1",
-		"@navikt/aksel-icons": "7.39.0",
-		"@navikt/ds-css": "7.39.0",
-		"@navikt/ds-react": "7.39.0",
+		"@navikt/aksel-icons": "8.9.1",
+		"@navikt/ds-css": "8.9.1",
+		"@navikt/ds-react": "8.9.1",
 		"axios": "1.15.0",
 		"react": "19.2.5",
 		"react-dom": "19.2.5",
