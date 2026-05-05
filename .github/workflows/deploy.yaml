@@ -22,7 +22,7 @@ env:
 
 concurrency:
   group: deploy-${{ github.ref }}
-  cancel-in-progress: false    
+  cancel-in-progress: false
 
 jobs:
   build-push-image:
@@ -30,7 +30,7 @@ jobs:
       contents: read
       id-token: write
     name: Build application & build/push image
-    uses: navikt/mob-gha-workflows/.github/workflows/node-build-push-image.yaml@main
+    uses: navikt/mob-gha-workflows/.github/workflows/node-build-push-image.yaml@dependabot/github_actions/github-be44c1ab35
     secrets: inherit
 
   deploy-dev:
