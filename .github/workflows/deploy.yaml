@@ -22,7 +22,7 @@ env:
 
 concurrency:
   group: deploy-${{ github.ref }}
-  cancel-in-progress: false    
+  cancel-in-progress: false
 
 jobs:
   build-push-image:
