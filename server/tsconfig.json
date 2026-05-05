@@ -1,14 +1,13 @@
 {
 	"compilerOptions": {
 		"outDir": "build",
+		"rootDir": "./src",
 		"target": "ESNext",
-		"module": "CommonJS",
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"strict": true,
-		"skipLibCheck": true,
-		"typeRoots": ["../node_modules/@types"],
-		"rootDir": "./src"
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true
 	},
 	"include": ["src/**/*"]
 }
