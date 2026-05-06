@@ -18,6 +18,7 @@ export default function TemplatePage() {
 		{ id: 1, name: "Ola Nordmann", profession: "Lærer" },
 		{ id: 2, name: "Kari Nordmann", profession: "Sykepleier" },
 		{ id: 3, name: "Per Hansen", profession: "Elektriker" },
+		{ id: 3, name: "Gunnar Olsen", profession: "It-konsulent" },
 	];
 
 	return (
