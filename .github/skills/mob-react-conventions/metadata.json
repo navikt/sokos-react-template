@@ -1,0 +1,54 @@
+{
+	"description": "Kodekonvensjoner, mønstre og stilregler for React-mikrofrontender i NAV Utbetalingsportalen (sokos-react-template). Bruk til kodegjennomgang, skriving av ny kode, og verifisering av at koden følger teamets standarder.",
+	"domain": "frontend",
+	"tags": [
+		"react",
+		"typescript",
+		"vite",
+		"pnpm",
+		"biome",
+		"css-modules",
+		"bem",
+		"aksel",
+		"swr",
+		"axios",
+		"zod",
+		"msw",
+		"playwright",
+		"nav",
+		"utbetalingsportalen",
+		"mikrofrontend",
+		"nais",
+		"nanostores"
+	],
+	"examples": [
+		{
+			"scenario": "Kodegjennomgang",
+			"prompt": "Gå gjennom denne filen og sjekk om den følger mob-react-konvensjonene"
+		},
+		{
+			"scenario": "Ny API-hook",
+			"prompt": "Lag en SWR-hook for å hente betalingsdata fra backend"
+		},
+		{
+			"scenario": "Ny side",
+			"prompt": "Lag en ny side med tabell og overskrift som følger mal-konvensjonene"
+		},
+		{
+			"scenario": "CSS-sjekk",
+			"prompt": "Sjekk om CSS-modulene bruker BEM og Aksel design tokens riktig"
+		},
+		{
+			"scenario": "Zod-validering",
+			"prompt": "Legg til Zod-schema og TypeScript-type for API-responsen"
+		},
+		{
+			"scenario": "Delt state",
+			"prompt": "Lag en Nanostore for å sende oppdragsId til en annen mikrofrontend"
+		},
+		{
+			"scenario": "Portalen-registrering",
+			"prompt": "Hva må til for å registrere denne mikrofrontenden i Utbetalingsportalen?"
+		}
+	]
+}
