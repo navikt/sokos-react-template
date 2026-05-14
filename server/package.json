@@ -12,7 +12,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"express": "5.2.1",
-		"express-static-gzip": "3.0.0"
+		"express-static-gzip": "3.0.1"
 	},
 	"devDependencies": {
 		"@types/express": "5.0.6",
