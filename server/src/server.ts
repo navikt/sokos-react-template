@@ -7,7 +7,7 @@ const buildPath = path.resolve(import.meta.dirname, "../dist");
 const server = express();
 
 const corsAllowedOrigins: (string | RegExp)[] = [
-	/https:\/\/utbetalingsportalen(-[a-z][a-z0-9])?(.ansatt|.intern)(.dev)?.nav.no/,
+	/^https:\/\/utbetalingsportalen(?:-q[a-z0-9]+)?\.(?:ansatt|intern)(?:\.dev)?\.nav\.no$/,
 	"http://localhost:5173",
 ];
 
