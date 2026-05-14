@@ -1,0 +1,12 @@
+# pnpm settings for the root project (the client/Vite app).
+# Settings apply ONLY to the root install (`pnpm install` at repo root).
+# Server-specific overrides live in server/pnpm-workspace.yaml and are NOT inherited.
+
+overrides:
+  fast-uri: 3.1.2
+  protobufjs: 8.0.2
+  ajv: 8.18.0
+engineStrict: true
+saveExact: true
+ignoreScripts: true
+minimumReleaseAge: 10080
