@@ -45,6 +45,37 @@ NB! Navngi følgende: `sokos-up-appNavn`, f.eks: `sokos-up-venteregister`
 5. Bruker du ikke routing? Appen nås på <http://localhost:5173>
 6. Bruker du routing? Appen nås på <http://localhost:5173/mikrofrontend>
 
+## Oppdatere pnpm-versjon
+
+`packageManager`-feltet i `package.json` (både rot og `server/`) er låst til en spesifikk pnpm-versjon med SHA-512-hash. Dette beskytter mot supply chain-angrep ved å sikre at Corepack alltid laster ned nøyaktig samme tarball.
+
+For å bumpe pnpm trygt, bruk det innebygde scriptet:
+
+```bash
+pnpm run pnpm:resolve
+```
+
+Scriptet:
+
+1. Henter alle pnpm-versjoner fra npm-registeret.
+2. Filtrerer bort versjoner som er nyere enn `minimumReleaseAge` (7 dager) — dette gir tid til at supply chain-angrep oppdages.
+3. Laster ned tarballen og verifiserer SHA-512 uavhengig av det npm-manifestet hevder.
+4. Skriver ut en ferdig `"packageManager": "..."`-streng samt en oppdatert `engines.pnpm`-verdi du kan lime inn.
+
+> **Husk:** Oppdater `engines.pnpm` i **både** rot-`package.json` og `server/package.json` til samme versjon som `packageManager`. Dette gjør at `engineStrict` avviser uoverensstemmende lokale pnpm-installasjoner.
+
+### VIKTIG — verifiser før du pusher til GitHub
+
+Selv om scriptet er hardent, er ingen kjede sterkere enn det svakeste leddet. **Før du committer og pusher endringer:**
+
+1. Bekreft versjonen på pnpms offisielle release-side: `https://github.com/pnpm/pnpm/releases/tag/v<versjon>`
+2. Sammenlign integritetshashen med npms publiserte verdi: `https://registry.npmjs.org/pnpm/<versjon>`
+3. Sjekk at versjonen ikke er trukket tilbake (yanked).
+4. Oppdater `engines.pnpm` i **begge** `package.json`-filer til `">=<versjon>"`.
+5. Kjør `pnpm install` lokalt og bekreft at det går gjennom uten feil.
+6. Lim inn samme `packageManager`-streng i **både** rot-`package.json` og `server/package.json`.
+7. Åpne en PR og la CI kjøre før du merger.
+
 ## Ønsker du routing?
 
 Templaten har ikke routing. Men om du ønsker å ha routing gjør du følgende:

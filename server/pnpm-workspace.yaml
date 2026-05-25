@@ -1,0 +1,5 @@
+# pnpm settings for the server/ project (independent from root install).
+# Overrides here apply ONLY to `cd server && pnpm install`.
+# Root overrides live in ../pnpm-workspace.yaml and are NOT inherited.
+
+overrides: {}

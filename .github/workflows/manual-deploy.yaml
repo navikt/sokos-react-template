@@ -15,6 +15,7 @@ jobs:
     secrets: inherit
     with:
       image-tag: snapshot
+      has-playwright: true
 
   deploy-dev:
     permissions:
