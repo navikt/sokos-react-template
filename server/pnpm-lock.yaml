@@ -22,11 +22,11 @@ importers:
         specifier: 5.0.6
         version: 5.0.6
       '@types/node':
-        specifier: 25.8.0
-        version: 25.8.0
+        specifier: 25.9.1
+        version: 25.9.1
       tsx:
-        specifier: 4.22.1
-        version: 4.22.1
+        specifier: 4.22.3
+        version: 4.22.3
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -204,8 +204,8 @@ packages:
   '@types/http-errors@2.0.5':
     resolution: {integrity: sha512-r8Tayk8HJnX0FztbZN7oVqGccWgw98T/0neJphO91KkmOzug1KkofZURD4UaD5uH8AqcFLfdPErnBod0u71/qg==}
 
-  '@types/node@25.8.0':
-    resolution: {integrity: sha512-TCFSk8IZh+iLX1xtksoBVtdmgL+1IX0fC9BeU4QqFSuNdN/K+HUlhqOzEmSYYpZUVsLYcPqc9KX+60iDuninSQ==}
+  '@types/node@25.9.1':
+    resolution: {integrity: sha512-xfrlY7UD5rMJk3ZVJP8BNzS28J36YJg+xp+LPXV1TdWxr8uMH5A860QNxYDGQe/ylDSgjxE52Q9VnO7p75tJxg==}
 
   '@types/qs@6.14.0':
     resolution: {integrity: sha512-eOunJqu0K1923aExK6y8p6fsihYEn/BYuQ4g0CxAAgFc4b/ZLN4CrsRZ55srTdqoiLzU2B2evC+apEIxprEzkQ==}
@@ -479,8 +479,8 @@ packages:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
-  tsx@4.22.1:
-    resolution: {integrity: sha512-TvncJykhxAzFCk0VQZKBTClall4Pm7qXDSodb6uxi8QFa8X8mT6ABjxxsQ2opDRYxG7AzcRWXaFtruz5HJKuWg==}
+  tsx@4.22.3:
+    resolution: {integrity: sha512-mdoNxBC/cSQObGGVQ5Bpn5i+yv7j68gk3Nfm3wFjcJg3Z0Mix9jzAFfP12prmm5eVGmDKtp0yyArrs0Q+8gZHg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -590,15 +590,15 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 25.8.0
+      '@types/node': 25.9.1
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 25.8.0
+      '@types/node': 25.9.1
 
   '@types/express-serve-static-core@5.1.0':
     dependencies:
-      '@types/node': 25.8.0
+      '@types/node': 25.9.1
       '@types/qs': 6.14.0
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -611,7 +611,7 @@ snapshots:
 
   '@types/http-errors@2.0.5': {}
 
-  '@types/node@25.8.0':
+  '@types/node@25.9.1':
     dependencies:
       undici-types: 7.24.6
 
@@ -621,12 +621,12 @@ snapshots:
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 25.8.0
+      '@types/node': 25.9.1
 
   '@types/serve-static@2.2.0':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 25.8.0
+      '@types/node': 25.9.1
 
   accepts@2.0.0:
     dependencies:
@@ -973,7 +973,7 @@ snapshots:
 
   toidentifier@1.0.1: {}
 
-  tsx@4.22.1:
+  tsx@4.22.3:
     dependencies:
       esbuild: 0.28.0
     optionalDependencies:
