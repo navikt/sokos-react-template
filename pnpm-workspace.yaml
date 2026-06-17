@@ -3,8 +3,12 @@
 # Server-specific overrides live in server/pnpm-workspace.yaml and are NOT inherited.
 
 overrides:
-  protobufjs: 8.2.0
+  form-data: 4.0.6
+  '@opentelemetry/core': 2.8.0
 engineStrict: true
 saveExact: true
 ignoreScripts: true
 minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - form-data@4.0.6
+  - '@opentelemetry/core@2.8.0'
