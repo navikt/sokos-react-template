@@ -13,8 +13,8 @@ importers:
   .:
     dependencies:
       '@grafana/faro-web-sdk':
-        specifier: 2.7.0
-        version: 2.7.0
+        specifier: 2.7.1
+        version: 2.7.1
       '@navikt/aksel-icons':
         specifier: 7.39.0
         version: 7.39.0
@@ -23,10 +23,10 @@ importers:
         version: 7.39.0
       '@navikt/ds-react':
         specifier: 7.39.0
-        version: 7.39.0(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 7.39.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       axios:
-        specifier: 1.16.1
-        version: 1.16.1
+        specifier: 1.17.0
+        version: 1.17.0
       react:
         specifier: 19.2.7
         version: 19.2.7
@@ -53,17 +53,17 @@ importers:
         specifier: 1.60.0
         version: 1.60.0
       '@types/node':
-        specifier: 25.9.1
-        version: 25.9.1
+        specifier: 25.9.3
+        version: 25.9.3
       '@types/react':
-        specifier: 19.2.16
-        version: 19.2.16
+        specifier: 19.2.17
+        version: 19.2.17
       '@types/react-dom':
         specifier: 19.2.3
-        version: 19.2.3(@types/react@19.2.16)
+        version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: 6.0.2
-        version: 6.0.2(vite@8.0.16(@types/node@25.9.1)(yaml@2.9.0))
+        version: 6.0.2(vite@8.0.16(@types/node@25.9.3)(yaml@2.9.0))
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -72,22 +72,22 @@ importers:
         version: 16.4.0
       msw:
         specifier: 2.14.6
-        version: 2.14.6(@types/node@25.9.1)(typescript@6.0.3)
+        version: 2.14.6(@types/node@25.9.3)(typescript@6.0.3)
       stylelint:
-        specifier: 17.12.0
-        version: 17.12.0(typescript@6.0.3)
+        specifier: 17.13.0
+        version: 17.13.0(typescript@6.0.3)
       stylelint-config-standard:
         specifier: 40.0.0
-        version: 40.0.0(stylelint@17.12.0(typescript@6.0.3))
+        version: 40.0.0(stylelint@17.13.0(typescript@6.0.3))
       typescript:
         specifier: 6.0.3
         version: 6.0.3
       vite:
         specifier: 8.0.16
-        version: 8.0.16(@types/node@25.9.1)(yaml@2.9.0)
+        version: 8.0.16(@types/node@25.9.3)(yaml@2.9.0)
       vite-plugin-css-injected-by-js:
         specifier: 5.0.1
-        version: 5.0.1(vite@8.0.16(@types/node@25.9.1)(yaml@2.9.0))
+        version: 5.0.1(vite@8.0.16(@types/node@25.9.3)(yaml@2.9.0))
 
 packages:
 
@@ -247,8 +247,8 @@ packages:
   '@grafana/faro-core@2.7.1':
     resolution: {integrity: sha512-qJOp0sPBAEsmUxhs11nVdGx5Dk+VJ4CN/4s9ek99m33FfzybmjQ9nPXLHWhwEeNJNiEwQdDl4HsNUlXBGT5YEw==}
 
-  '@grafana/faro-web-sdk@2.7.0':
-    resolution: {integrity: sha512-NIbFK2g634/KOcq6ej1LseZrbbRejBiIrO8beQpYX6CkyXVGrcdoWRfJdqkQ3Ys60h4aTH+xoAh2Oh0HebhOZg==}
+  '@grafana/faro-web-sdk@2.7.1':
+    resolution: {integrity: sha512-ZK3MuE6FWBmiT5tTivcMovTVe8fG1tPm1ctc84blVoJkpQXlgODxOX7/fNmDBOjaHZ3EWdoGplZmjoXQ3g0mDw==}
 
   '@inquirer/ansi@2.0.7':
     resolution: {integrity: sha512-3eTuUO1vH2cZm2ZKHeQxnOqlTi9EfZDGgIe3BL3I4u+rJHocr9Fz86M4fjYABPvFnQG/gGK551HqDiIcETwU6Q==}
@@ -508,16 +508,16 @@ packages:
   '@tybys/wasm-util@0.10.2':
     resolution: {integrity: sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==}
 
-  '@types/node@25.9.1':
-    resolution: {integrity: sha512-xfrlY7UD5rMJk3ZVJP8BNzS28J36YJg+xp+LPXV1TdWxr8uMH5A860QNxYDGQe/ylDSgjxE52Q9VnO7p75tJxg==}
+  '@types/node@25.9.3':
+    resolution: {integrity: sha512-603BddQMv3pUcr4U2dhujk83N2tTDVr/34wII2B6bJy6g+8WD6yUb11jszNs0gdi4PesVWl7ABt8nYMVpnLUcg==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.16':
-    resolution: {integrity: sha512-esJiCAnl0kfpNdE69f3So4WJUXy95dLZydX0KwK46riIHDzHM7O9Vtf9xCHW0PXIqvgqNrswl522kA/5yx+F4w==}
+  '@types/react@19.2.17':
+    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
 
   '@types/set-cookie-parser@2.4.10':
     resolution: {integrity: sha512-GGmQVGpQWUe5qglJozEjZV/5dyxbOOZ0LHe/lqyWssB88Y4svNfst0uqBVscdDeIKl5Jy5+aPSvy7mI9tYRguw==}
@@ -579,8 +579,8 @@ packages:
     resolution: {integrity: sha512-KunSNx+TVpkAw/6ULfhnx+HWRecjqZGTOyquAoWHYLRSdK1tB5Ihce1ZW+UY3fj33bYAFWPu7W/GRSmmrCGuxA==}
     engines: {node: '>=4'}
 
-  axios@1.16.1:
-    resolution: {integrity: sha512-caYkukvroVPO8KrzuJEb50Hm07KwfBZPEC3VeFHTsqWHvKTsy54hjJz9BS/cdaypROE2rH6xvm9mHX4fgWkr3A==}
+  axios@1.17.0:
+    resolution: {integrity: sha512-J8SwNxprqqpbfenehxWYXE7CW+wM1BB4w3+N+g+/Wx40xM4rsLrfPmHHxSWIxJLYDgSY/HqlFPIYb2/S3rxafw==}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -1309,8 +1309,8 @@ packages:
     peerDependencies:
       stylelint: ^17.0.0
 
-  stylelint@17.12.0:
-    resolution: {integrity: sha512-KIlzWXMHUvgfPUR0R7TK3H80yCIi0uoivUwf+6Az4yrHJD1Q3c1qIkh/H5Z0i/K3QXgtq/UMEkWyBUSUwnpnOg==}
+  stylelint@17.13.0:
+    resolution: {integrity: sha512-G1WYzMerp7ihOaIe9VJCHLt12MoAD2QLf1AFerYP37+BCRBUK5UCpq8e/mN+zCIaJPKQcaxhE4WlPmqdiOx/gw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -1623,7 +1623,7 @@ snapshots:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/otlp-transformer': 0.218.0(@opentelemetry/api@1.9.1)
 
-  '@grafana/faro-web-sdk@2.7.0':
+  '@grafana/faro-web-sdk@2.7.1':
     dependencies:
       '@grafana/faro-core': 2.7.1
       ua-parser-js: 1.0.41
@@ -1631,30 +1631,30 @@ snapshots:
 
   '@inquirer/ansi@2.0.7': {}
 
-  '@inquirer/confirm@6.1.1(@types/node@25.9.1)':
+  '@inquirer/confirm@6.1.1(@types/node@25.9.3)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@25.9.1)
-      '@inquirer/type': 4.0.7(@types/node@25.9.1)
+      '@inquirer/core': 11.2.1(@types/node@25.9.3)
+      '@inquirer/type': 4.0.7(@types/node@25.9.3)
     optionalDependencies:
-      '@types/node': 25.9.1
+      '@types/node': 25.9.3
 
-  '@inquirer/core@11.2.1(@types/node@25.9.1)':
+  '@inquirer/core@11.2.1(@types/node@25.9.3)':
     dependencies:
       '@inquirer/ansi': 2.0.7
       '@inquirer/figures': 2.0.7
-      '@inquirer/type': 4.0.7(@types/node@25.9.1)
+      '@inquirer/type': 4.0.7(@types/node@25.9.3)
       cli-width: 4.1.0
       fast-wrap-ansi: 0.2.2
       mute-stream: 3.0.0
       signal-exit: 4.1.0
     optionalDependencies:
-      '@types/node': 25.9.1
+      '@types/node': 25.9.3
 
   '@inquirer/figures@2.0.7': {}
 
-  '@inquirer/type@4.0.7(@types/node@25.9.1)':
+  '@inquirer/type@4.0.7(@types/node@25.9.3)':
     optionalDependencies:
-      '@types/node': 25.9.1
+      '@types/node': 25.9.3
 
   '@keyv/bigmap@1.3.1(keyv@5.6.0)':
     dependencies:
@@ -1686,13 +1686,13 @@ snapshots:
 
   '@navikt/ds-css@7.39.0': {}
 
-  '@navikt/ds-react@7.39.0(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@navikt/ds-react@7.39.0(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@floating-ui/react': 0.27.8(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@floating-ui/react-dom': 2.1.8(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@navikt/aksel-icons': 7.39.0
       '@navikt/ds-tokens': 7.40.0
-      '@types/react': 19.2.16
+      '@types/react': 19.2.17
       clsx: 2.1.1
       date-fns: 4.4.0
       react: 19.2.7
@@ -1838,28 +1838,28 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@types/node@25.9.1':
+  '@types/node@25.9.3':
     dependencies:
       undici-types: 7.24.6
 
-  '@types/react-dom@19.2.3(@types/react@19.2.16)':
+  '@types/react-dom@19.2.3(@types/react@19.2.17)':
     dependencies:
-      '@types/react': 19.2.16
+      '@types/react': 19.2.17
 
-  '@types/react@19.2.16':
+  '@types/react@19.2.17':
     dependencies:
       csstype: 3.2.3
 
   '@types/set-cookie-parser@2.4.10':
     dependencies:
-      '@types/node': 25.9.1
+      '@types/node': 25.9.3
 
   '@types/statuses@2.0.6': {}
 
-  '@vitejs/plugin-react@6.0.2(vite@8.0.16(@types/node@25.9.1)(yaml@2.9.0))':
+  '@vitejs/plugin-react@6.0.2(vite@8.0.16(@types/node@25.9.3)(yaml@2.9.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.0.16(@types/node@25.9.1)(yaml@2.9.0)
+      vite: 8.0.16(@types/node@25.9.3)(yaml@2.9.0)
 
   agent-base@6.0.2:
     dependencies:
@@ -1896,7 +1896,7 @@ snapshots:
 
   axe-core@4.11.4: {}
 
-  axios@1.16.1:
+  axios@1.17.0:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.6
@@ -2341,9 +2341,9 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw@2.14.6(@types/node@25.9.1)(typescript@6.0.3):
+  msw@2.14.6(@types/node@25.9.3)(typescript@6.0.3):
     dependencies:
-      '@inquirer/confirm': 6.1.1(@types/node@25.9.1)
+      '@inquirer/confirm': 6.1.1(@types/node@25.9.3)
       '@mswjs/interceptors': 0.41.9
       '@open-draft/deferred-promise': 3.0.0
       '@types/statuses': 2.0.6
@@ -2543,16 +2543,16 @@ snapshots:
     dependencies:
       ansi-regex: 6.2.2
 
-  stylelint-config-recommended@18.0.0(stylelint@17.12.0(typescript@6.0.3)):
+  stylelint-config-recommended@18.0.0(stylelint@17.13.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.12.0(typescript@6.0.3)
+      stylelint: 17.13.0(typescript@6.0.3)
 
-  stylelint-config-standard@40.0.0(stylelint@17.12.0(typescript@6.0.3)):
+  stylelint-config-standard@40.0.0(stylelint@17.13.0(typescript@6.0.3)):
     dependencies:
-      stylelint: 17.12.0(typescript@6.0.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.12.0(typescript@6.0.3))
+      stylelint: 17.13.0(typescript@6.0.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.13.0(typescript@6.0.3))
 
-  stylelint@17.12.0(typescript@6.0.3):
+  stylelint@17.13.0(typescript@6.0.3):
     dependencies:
       '@csstools/css-calc': 3.2.1(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
@@ -2664,11 +2664,11 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-css-injected-by-js@5.0.1(vite@8.0.16(@types/node@25.9.1)(yaml@2.9.0)):
+  vite-plugin-css-injected-by-js@5.0.1(vite@8.0.16(@types/node@25.9.3)(yaml@2.9.0)):
     dependencies:
-      vite: 8.0.16(@types/node@25.9.1)(yaml@2.9.0)
+      vite: 8.0.16(@types/node@25.9.3)(yaml@2.9.0)
 
-  vite@8.0.16(@types/node@25.9.1)(yaml@2.9.0):
+  vite@8.0.16(@types/node@25.9.3)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -2676,7 +2676,7 @@ snapshots:
       rolldown: 1.0.3
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 25.9.1
+      '@types/node': 25.9.3
       fsevents: 2.3.3
       yaml: 2.9.0
 
