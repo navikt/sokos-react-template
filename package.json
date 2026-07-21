@@ -17,9 +17,9 @@
 	},
 	"dependencies": {
 		"@grafana/faro-web-sdk": "2.8.2",
-		"@navikt/aksel-icons": "7.39.0",
-		"@navikt/ds-css": "7.39.0",
-		"@navikt/ds-react": "7.39.0",
+		"@navikt/aksel-icons": "8.15.0",
+		"@navikt/ds-css": "8.15.0",
+		"@navikt/ds-react": "8.15.0",
 		"axios": "1.18.1",
 		"react": "19.2.7",
 		"react-dom": "19.2.7",
@@ -29,7 +29,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.5.2",
 		"@axe-core/playwright": "4.12.1",
-		"@navikt/aksel-stylelint": "7.40.0",
+		"@navikt/aksel-stylelint": "8.15.0",
 		"@playwright/test": "1.61.1",
 		"@types/node": "26.1.0",
 		"@types/react": "19.2.17",
