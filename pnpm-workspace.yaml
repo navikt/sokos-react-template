@@ -2,13 +2,8 @@
 # Settings apply ONLY to the root install (`pnpm install` at repo root).
 # Server-specific overrides live in server/pnpm-workspace.yaml and are NOT inherited.
 
-overrides:
-  form-data: 4.0.6
-  '@opentelemetry/core': 2.8.0
+overrides: {}
 engineStrict: true
 saveExact: true
 ignoreScripts: true
 minimumReleaseAge: 10080
-minimumReleaseAgeExclude:
-  - form-data@4.0.6
-  - '@opentelemetry/core@2.8.0'
