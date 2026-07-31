@@ -9,24 +9,6 @@ body {
 	background-color: var(--ax-bg-sunken);
 }
 
-.skip-link {
-	position: absolute;
-	top: var(--ax-space-2);
-	left: var(--ax-space-2);
-	z-index: 9999;
-	padding: var(--ax-space-2) var(--ax-space-4);
-	background-color: var(--ax-bg-default);
-	border: 2px solid var(--ax-border-focus);
-	border-radius: var(--ax-radius-8);
-	font-weight: bold;
-	transform: translateY(-200%);
-	transition: transform 0.15s;
-}
-
-.skip-link:focus {
-	transform: translateY(0);
-}
-
 .page-wrapper {
 	height: auto;
 	min-height: 100%;
