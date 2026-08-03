@@ -6,13 +6,13 @@ body {
 }
 
 body {
-	background-color: var(--a-gray-100);
+	background-color: var(--ax-bg-sunken);
 }
 
 .page-wrapper {
 	height: auto;
 	min-height: 100%;
-	margin: 5px;
+	margin: var(--ax-space-4);
 }
 
 .page-layout {

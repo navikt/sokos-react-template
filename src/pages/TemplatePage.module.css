@@ -1,16 +1,16 @@
 .loader {
-	margin: 2.5rem;
+	margin: var(--ax-space-40);
 	display: flex;
 	justify-content: center;
 }
 
 .template-body {
-	background-color: var(--a-surface-alt-1-subtle);
-	padding: 2.5rem;
+	background-color: var(--ax-bg-meta-purple-moderateA);
+	padding: var(--ax-space-40);
 }
 
 .template-header {
-	padding-bottom: 1.5rem;
-	padding-top: 1.5rem;
+	padding-bottom: var(--ax-space-24);
+	padding-top: var(--ax-space-24);
 	text-align: center;
 }
