@@ -27,21 +27,21 @@
 		"zod": "4.4.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.9",
+		"@biomejs/biome": "2.5.10",
 		"@axe-core/playwright": "4.13.0",
 		"@navikt/aksel-stylelint": "7.40.0",
 		"@playwright/test": "1.62.1",
-		"@types/node": "26.2.0",
+		"@types/node": "26.3.0",
 		"@types/react": "19.2.18",
-		"@types/react-dom": "19.2.4",
-		"@vitejs/plugin-react": "6.0.5",
+		"@types/react-dom": "19.2.5",
+		"@vitejs/plugin-react": "6.1.0",
 		"husky": "9.1.7",
 		"lint-staged": "17.3.0",
 		"msw": "2.15.0",
 		"stylelint": "17.14.1",
 		"stylelint-config-standard": "40.0.0",
 		"typescript": "7.0.2",
-		"vite": "8.2.1",
+		"vite": "8.2.2",
 		"vite-plugin-css-injected-by-js": "5.0.2"
 	},
 	"msw": {
