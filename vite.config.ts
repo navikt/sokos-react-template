@@ -10,7 +10,13 @@ export default defineConfig(({ mode }) => ({
 		rolldownOptions: {
 			input: resolve(import.meta.dirname, "src/App.tsx"),
 			preserveEntrySignatures: "exports-only",
-			external: ["react", "react-dom"],
+			external: [
+				"react",
+				"react/jsx-runtime",
+				"react-dom",
+				"react-dom/client",
+				"scheduler",
+			],
 			output: {
 				entryFileNames: "bundle.js",
 				format: "esm",
