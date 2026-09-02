@@ -6,10 +6,17 @@ import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 export default defineConfig(({ mode }) => ({
 	base: "/mikrofrontend",
 	build: {
+		copyPublicDir: false,
 		rolldownOptions: {
 			input: resolve(import.meta.dirname, "src/App.tsx"),
 			preserveEntrySignatures: "exports-only",
-			external: ["react", "react-dom"],
+			external: [
+				"react",
+				"react/jsx-runtime",
+				"react-dom",
+				"react-dom/client",
+				"scheduler",
+			],
 			output: {
 				entryFileNames: "bundle.js",
 				format: "esm",
