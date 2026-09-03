@@ -17,9 +17,9 @@
 	},
 	"dependencies": {
 		"@grafana/faro-web-sdk": "2.10.0",
-		"@navikt/aksel-icons": "7.39.0",
-		"@navikt/ds-css": "7.39.0",
-		"@navikt/ds-react": "7.39.0",
+		"@navikt/aksel-icons": "8.15.0",
+		"@navikt/ds-css": "8.15.0",
+		"@navikt/ds-react": "8.15.0",
 		"axios": "1.19.0",
 		"react": "19.2.8",
 		"react-dom": "19.2.8",
@@ -29,7 +29,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.5.10",
 		"@axe-core/playwright": "4.13.0",
-		"@navikt/aksel-stylelint": "7.40.0",
+		"@navikt/aksel-stylelint": "8.15.0",
 		"@playwright/test": "1.62.1",
 		"@types/node": "26.3.0",
 		"@types/react": "19.2.18",
@@ -54,6 +54,10 @@
 			"stylelint-config-standard",
 			"@navikt/aksel-stylelint/recommended"
 		],
+		"rules": {
+			"selector-class-pattern": "^[a-z][a-z0-9-]*(__[a-z][a-z0-9-]*)*(--[a-z][a-z0-9-]*)?$",
+			"custom-property-pattern": "[a-z][a-zA-Z0-9-]+"
+		},
 		"ignoreFiles": "dist/**/*"
 	},
 	"lint-staged": {
