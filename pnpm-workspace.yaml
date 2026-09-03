@@ -2,10 +2,7 @@
 # Settings apply ONLY to the root install (`pnpm install` at repo root).
 # Server-specific overrides live in server/pnpm-workspace.yaml and are NOT inherited.
 
-overrides:
-  fast-uri: 3.1.6
-  nanoid: 3.3.18
-  js-yaml: 4.3.1
+overrides: {}
 engineStrict: true
 saveExact: true
 ignoreScripts: true
