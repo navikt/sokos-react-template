@@ -1,5 +1,7 @@
-const isProduction = !!window.location.href.match(/(intern|ansatt)\.nav\.no/);
-const isDevelopment = !!window.location.href.match(
+const isProduction = !!window.location.hostname.match(
+	/(intern|ansatt)\.nav\.no/,
+);
+const isDevelopment = !!window.location.hostname.match(
 	/(intern|ansatt)\.dev\.nav\.no/,
 );
 
