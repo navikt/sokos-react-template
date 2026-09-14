@@ -25,8 +25,7 @@ spec:
     - "https://utbetalingsportalen.ansatt.dev.nav.no/sokos-react-template"
   resources:
     limits:
-      cpu: "3"
-      memory: 768Mi
+      memory: 512Mi
     requests:
-      cpu: "50m"
-      memory: 256Mi
+      cpu: 50m
+      memory: 128Mi
