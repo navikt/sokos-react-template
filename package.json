@@ -16,7 +16,6 @@
 		"pnpm:resolve": "node scripts/resolve-pnpm-version.mjs"
 	},
 	"dependencies": {
-		"@nais/apm": "0.7.2",
 		"@navikt/aksel-icons": "8.15.0",
 		"@navikt/ds-css": "8.15.0",
 		"@navikt/ds-react": "8.15.0",
