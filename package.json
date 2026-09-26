@@ -65,8 +65,8 @@
 		"*.css": "stylelint --fix"
 	},
 	"engines": {
-		"pnpm": ">=11.17.0",
+		"pnpm": ">=11.27.0",
 		"node": ">=24.14.1"
 	},
-	"packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72"
+	"packageManager": "pnpm@11.27.0+sha512.ad12821463bb143295f1fa3ecde77a6b9b97a7990386da800ff57bffc3964dc64b7b1c7559d5dbe5c337aea659ed9c8937d4370bd198ca2009bc6fa0249808e7"
 }
