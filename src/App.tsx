@@ -1,11 +1,8 @@
-import { useEffect } from "react";
 import TemplatePage from "./pages/TemplatePage";
-import { initGrafanaFaro } from "./util/grafanaFaro";
+import { initApm } from "./util/apm";
+
+initApm();
 
 export default function App() {
-	useEffect(() => {
-		initGrafanaFaro();
-	}, []);
-
 	return <TemplatePage />;
 }

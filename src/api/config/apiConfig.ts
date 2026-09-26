@@ -1,5 +1,9 @@
-import axios, { type CreateAxiosDefaults } from "axios";
-import { ApiError, HttpStatusCodeError } from "../../types/Error";
+import axios, {
+	type AxiosError,
+	type AxiosInstance,
+	type CreateAxiosDefaults,
+} from "axios";
+import { ApiError, HttpStatusCodeError } from "./Error";
 
 const config = (baseUri: string): CreateAxiosDefaults => ({
 	baseURL: baseUri,
@@ -13,27 +17,47 @@ const config = (baseUri: string): CreateAxiosDefaults => ({
 	validateStatus: (status) => status < 400,
 });
 
-function api(baseUri: string) {
+// Axios-instanser caches per baseUri slik at instans og interceptor
+// ikke opprettes på nytt for hvert eneste API-kall.
+const instanceCache = new Map<string, AxiosInstance>();
+
+function api(baseUri: string): AxiosInstance {
+	const cachedInstance = instanceCache.get(baseUri);
+	if (cachedInstance) {
+		return cachedInstance;
+	}
+
 	const instance = axios.create(config(baseUri));
 
 	instance.interceptors.response.use(
 		(response) => response,
-		(error) => {
-			if (error.response?.status === 400) {
-				// her kan vi legge feilkoder også som vi fra backend
-				throw new HttpStatusCodeError(error.response?.status);
-			}
+		(error: AxiosError) => {
 			if (error.response?.status === 401 || error.response?.status === 403) {
 				// Uinnlogget - vil ikke skje i miljø da appen er beskyttet
 				return Promise.reject(error);
 			}
-			throw new ApiError("Issues with connection to backend");
+			if (error.response?.status === 400) {
+				throw new HttpStatusCodeError(
+					400,
+					(error.response.data as { message?: string })?.message ||
+						"Ugyldig forespørsel. Hvis feilen vedvarer, meld sak i Porten.",
+				);
+			}
+			throw new ApiError(
+				(error.response?.data as { message?: string })?.message ||
+					"Noe gikk galt. Hvis feilen vedvarer, meld sak i Porten.",
+			);
 		},
 	);
+
+	instanceCache.set(baseUri, instance);
 	return instance;
 }
 
-export async function axiosFetcher<T>(baseUri: string, url: string) {
+export async function axiosFetcher<T>(
+	baseUri: string,
+	url: string,
+): Promise<T> {
 	const res = await api(baseUri).get<T>(url);
 	return res.data;
 }
@@ -42,7 +66,7 @@ export async function axiosPostFetcher<T, U>(
 	baseUri: string,
 	url: string,
 	body?: T,
-) {
+): Promise<U> {
 	const res = await api(baseUri).post<U>(url, body);
 	return res.data;
 }
