@@ -2,11 +2,9 @@
 # Settings apply ONLY to the root install (`pnpm install` at repo root).
 # Server-specific overrides live in server/pnpm-workspace.yaml and are NOT inherited.
 
-overrides: {}
 engineStrict: true
 saveExact: true
 ignoreScripts: true
 minimumReleaseAge: 10080
-# @nais/apm 0.7.2 fikser CORS-feil mot collectoren på dev-gcp.
 minimumReleaseAgeExclude:
-  - "@nais/apm"
+  - '@nais/apm@0.7.2'

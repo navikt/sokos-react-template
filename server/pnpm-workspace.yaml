@@ -6,5 +6,3 @@ overrides:
   qs: 6.16.0
 allowBuilds:
   esbuild: true
-minimumReleaseAgeExclude:
-  - qs@6.16.0
