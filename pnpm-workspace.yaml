@@ -7,3 +7,6 @@ engineStrict: true
 saveExact: true
 ignoreScripts: true
 minimumReleaseAge: 10080
+# @nais/apm 0.7.2 fikser CORS-feil mot collectoren på dev-gcp.
+minimumReleaseAgeExclude:
+  - "@nais/apm"
