@@ -6,8 +6,7 @@
 	"main": "build/server.js",
 	"scripts": {
 		"dev": "tsx watch src/server.ts",
-		"build": "tsc --build",
-		"prune:production": "rm -rf node_modules && pnpm install --prod --frozen-lockfile --ignore-scripts"
+		"build": "tsc --build"
 	},
 	"author": "navikt",
 	"license": "MIT",
