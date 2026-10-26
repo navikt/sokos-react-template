@@ -111,3 +111,5 @@ public/mockServiceWorker.js
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+.pnpm-store/

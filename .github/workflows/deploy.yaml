@@ -33,6 +33,7 @@ jobs:
     uses: navikt/beregningsplattform-gha-workflows/.github/workflows/node-build-push-image.yaml@d9f047707da888caa7b9ba04a7716eb2f3564f27 # ratchet:navikt/beregningsplattform-gha-workflows/.github/workflows/node-build-push-image.yaml@v1.1.0
     with:
       has-playwright: true
+      server-prune-dev-deps: pnpm run prune:production
     secrets: inherit
 
   deploy-dev:
