@@ -16,9 +16,9 @@
 		"pnpm:resolve": "node scripts/resolve-pnpm-version.mjs"
 	},
 	"dependencies": {
-		"@navikt/aksel-icons": "8.20.1",
-		"@navikt/ds-css": "8.20.1",
-		"@navikt/ds-react": "8.20.1",
+		"@navikt/aksel-icons": "8.21.0",
+		"@navikt/ds-css": "8.21.0",
+		"@navikt/ds-react": "8.21.0",
 		"axios": "1.21.0",
 		"react": "19.3.1",
 		"react-dom": "19.3.1",
@@ -28,7 +28,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.6.4",
 		"@axe-core/playwright": "4.14.0",
-		"@navikt/aksel-stylelint": "8.20.1",
+		"@navikt/aksel-stylelint": "8.21.0",
 		"@playwright/test": "1.64.1",
 		"@types/node": "26.6.6",
 		"@types/react": "19.3.0",
